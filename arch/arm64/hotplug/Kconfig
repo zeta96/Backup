@@ -19,4 +19,10 @@ config ASMP
 	  For MPU based protection-enabled targets please refer to
 	  MSM_KERNEL_PROTECT_MPU
 
+config ALUCARD_CONTROL
+	bool "Alucard"
+	depends on CUSTOM_HOTPLUG
+	help
+	  Known for being battery friendly. Developed by Alucard_24@XDA
+
 endmenu
