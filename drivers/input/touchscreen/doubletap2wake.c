@@ -165,10 +165,10 @@ static bool calc_within_range(int x_pre, int y_pre, int x_new, int y_new, int ra
 
 /* init a new touch */
 static void new_touch(int x, int y) {
-	tap_time_pre = ktime_to_ms(ktime_get());
-	x_pre = x;
-	y_pre = y;
-	touch_nr++;
+ tap_time_pre = ktime_to_ms(ktime_get());
+ x_pre = x;
+ y_pre = y;
+ touch_nr++;
 }
 
 /* Doubletap2wake main function */
