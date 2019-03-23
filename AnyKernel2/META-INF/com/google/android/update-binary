@@ -41,22 +41,22 @@ if [ $? != 0 -o -z "$(ls /tmp/anykernel/tools)" ]; then
 fi;
 chmod -R 755 /tmp/anykernel/tools /tmp/anykernel/bin;
 bb=/tmp/anykernel/tools/busybox;
-
-ui_print "$(file_getprop /tmp/anykernel/anykernel.sh kernel.string)";
-ui_print "    ___                     ";
-ui_print "   ( /                      ";
-ui_print "    / __,  _,  , , __,  _   ";
-ui_print "  _/_(_/(_(_)_(_/_(_/(_/ (_ ";
-ui_print " //        /|               ";
-ui_print "(/        (/                ";
-ui_print "";
-ui_print "";
-ui_print " __  ,______ _ __  _ __  ______  __  ";
-ui_print "( /,/(  /   ( /  )( /  )(  /    ( /  ";
-ui_print " /<    /--   /--<  /  /   /--    /   ";
-ui_print "/  \_(/____//   \_/  (_ (/____/(/___/";
-ui_print "";
-ui_print "";
+ui_print "$(file_getprop /tmp/anykernel/anykernel.sh kernel.string)";                       
+ui_print "        `      .`             ";
+ui_print "    :ohNMNmhysd/   --.        "; 
+ui_print "   `-   `.:-.hs `oh.          ";
+ui_print "            hN`.mN`           ";
+ui_print "           /Mh hMo            ";
+ui_print "       `+//mMh NN.            ";
+ui_print "          :MMo:M/             ";
+ui_print "        .:yMN`do              ";
+ui_print "          :M/y/       -       "; 
+ui_print "         `dshhdmNMMNdo.       ";
+ui_print "        -ys+:-.`..:/`         ";
+ui_print "        `                     
+ui_print "      Luuvy Kernel by Zeta96";
+ui_print "**AnyKernel2 by osm0sis @ xda-developers**";
+ui_print " ";                                                  
 umount /system;
 mount -o rw -t auto /system;
 mount /data;
