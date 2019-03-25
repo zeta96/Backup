@@ -516,12 +516,11 @@ extern struct cpufreq_governor cpufreq_gov_interactive;
 #elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_SCHED)
 extern struct cpufreq_governor cpufreq_gov_sched;
 #define CPUFREQ_DEFAULT_GOVERNOR	(&cpufreq_gov_sched)
+
 #elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_INTELLIACTIVE)
 extern struct cpufreq_governor cpufreq_gov_intelliactive;
 #define CPUFREQ_DEFAULT_GOVERNOR	(&cpufreq_gov_intelliactive)
-#elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_ALESSA)
-extern struct cpufreq_governor cpufreq_gov_alessa;
-#define CPUFREQ_DEFAULT_GOVERNOR (&cpufreq_gov_alessa)
+
 #elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_LISI)
 extern struct cpufreq_governor cpufreq_gov_lisi;
 #define CPUFREQ_DEFAULT_GOVERNOR	(&cpufreq_gov_lisi)
