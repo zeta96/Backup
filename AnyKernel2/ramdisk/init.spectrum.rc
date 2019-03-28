@@ -15,7 +15,7 @@ on property:sys.boot_completed=1
    exec u:r:init:s0 root root -- /init.spectrum.sh
    exec u:r:su:s0 root root -- /init.spectrum.sh
    # Enable Spectrum support
-   setprop spectrum.support 0
+   setprop spectrum.support 1
    # Add kernel name
    setprop persist.spectrum.kernel Luuvy
 
