@@ -71,6 +71,7 @@
 #include <linux/pid_namespace.h>
 #include <linux/security.h>
 #include <linux/spinlock.h>
+#include <linux/sizes.h>
 
 #ifdef CONFIG_ANDROID_BINDER_IPC_32BIT
 #define BINDER_IPC_32BIT 1
@@ -111,11 +112,6 @@ static const struct file_operations binder_##name##_fops = { \
 
 static int binder_proc_show(struct seq_file *m, void *unused);
 BINDER_DEBUG_ENTRY(proc);
-
-/* This is only defined in include/asm-arm/sizes.h */
-#ifndef SZ_1K
-#define SZ_1K                               0x400
-#endif
 
 #define FORBIDDEN_MMAP_FLAGS                (VM_WRITE)
 
