@@ -20,7 +20,7 @@
 #include <linux/msm_thermal.h>
 
 #define AIO_HOTPLUG			"AiO_HotPlug"
-#define AIO_TOGGLE			0
+#define AIO_TOGGLE			1
 
 #if (NR_CPUS == 4)
     #define DEFAULT_CORES		4
