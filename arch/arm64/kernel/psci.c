@@ -504,7 +504,7 @@ static int cpu_psci_cpu_kill(unsigned int cpu)
 	do {
 		err = psci_ops.affinity_info(cpu_logical_map(cpu), 0);
 		if (err == PSCI_0_2_AFFINITY_LEVEL_OFF) {
-			pr_info("CPU%d killed (polled %d ms)\n", cpu,
+			pr_debug("CPU%d killed (polled %d ms)\n", cpu,
 				jiffies_to_msecs(jiffies - start));
 			return 1;
 		}
@@ -512,7 +512,7 @@ static int cpu_psci_cpu_kill(unsigned int cpu)
 		usleep_range(100, 1000);
 	} while (time_before(jiffies, end));
 
-	pr_warn("CPU%d may not have shut down cleanly (AFFINITY_INFO reports %d)\n",
+	pr_debug("CPU%d may not have shut down cleanly (AFFINITY_INFO reports %d)\n",
 			cpu, err);
 	/* Make op_cpu_kill() fail. */
 	return 0;
