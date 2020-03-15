@@ -130,7 +130,7 @@ static void __cpuinit asmp_work_fn(struct work_struct *work) {
 #if DEBUG
 				pr_info(ASMP_TAG"suspended\n");
 #endif
-                        
+                        }
                          
 		} else {
 			if ((nr_cpu_online > asmp_param.min_cpus) &&
