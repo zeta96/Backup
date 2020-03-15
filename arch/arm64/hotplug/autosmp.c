@@ -30,7 +30,7 @@
 #include <linux/hrtimer.h>
 #include <linux/display_state.h>
 
-#define HOTPLUG_ENABLED 0
+#define HOTPLUG_ENABLED 1
 #define DEBUG 0
 #define ASMP_TAG "AutoSMP: "
 #define ASMP_STARTDELAY 40000
@@ -56,9 +56,9 @@ static struct asmp_param_struct {
 	.delay = 500,
 	.scroff_single_core = true,
 	.max_cpus = 8,
-	.min_cpus = 1,
+	.min_cpus = 3,
 	.cpufreq_up = 95,
-	.cpufreq_down = 35,
+	.cpufreq_down = 90,
 	.cycle_up = 5,
 	.cycle_down = 5,
 };
