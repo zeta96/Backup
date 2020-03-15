@@ -124,13 +124,13 @@ static void __cpuinit asmp_work_fn(struct work_struct *work) {
 			/* unplug online cpu cores */
 			if (asmp_param.scroff_single_core)
 				for_each_present_cpu(cpu)
-					if (cpu && cpu_online(cpu))
+					if (cpu && cpu_online(cpu)) {
 						cpu_down(cpu);
 						cycle = 0;
 #if DEBUG
 				pr_info(ASMP_TAG"suspended\n");
 #endif
-                      
+                                        }
                          }
 		} else {
 			if ((nr_cpu_online > asmp_param.min_cpus) &&
