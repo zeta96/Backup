@@ -14,4 +14,9 @@ config ASMP
 	  For MPU based protection-enabled targets please refer to
 	  MSM_KERNEL_PROTECT_MPU
 
+config ALUCARD_HOTPLUG
+        bool "Enable alucard-hotplug cpu hotplug driver"
+        default n
+        help
+          Generic Alucard-hotplug cpu hotplug driver for ARM SOCs 
 
