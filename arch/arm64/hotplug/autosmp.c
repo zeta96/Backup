@@ -1,5 +1,5 @@
 /*
- * arch/arm/kernel/autosmp.c
+ * arch/arm64/kernel/autosmp.c
  *
  * automatically hotplug/unplug multiple cpu cores
  * based on cpu load and suspend state
@@ -130,6 +130,8 @@ static void __cpuinit asmp_work_fn(struct work_struct *work) {
 #if DEBUG
 				pr_info(ASMP_TAG"suspended\n");
 #endif
+                      
+                         }
 		} else {
 			if ((nr_cpu_online > asmp_param.min_cpus) &&
 					(cycle >= asmp_param.cycle_down)) {
