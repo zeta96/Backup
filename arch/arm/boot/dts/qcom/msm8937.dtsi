@@ -1666,9 +1666,9 @@
 		qcom,pm-qos-irq-latency = <2 200>;
 
 		qcom,pm-qos-cpu-groups = <0x0f 0xf0>;
-		qcom,pm-qos-cmdq-latency-us = <2 200>, <2 200>;
+		qcom,pm-qos-cmdq-latency-us = <100 200>, <100 200>;
 
-		qcom,pm-qos-legacy-latency-us = <2 200>, <2 200>;
+		qcom,pm-qos-legacy-latency-us = <100 200>, <100 200>;
 
 		qcom,msm-bus,name = "sdhc1";
 		qcom,msm-bus,num-cases = <9>;
@@ -1710,7 +1710,7 @@
 		qcom,pm-qos-irq-latency = <2 200>;
 
 		qcom,pm-qos-cpu-groups = <0x0f 0xf0>;
-		qcom,pm-qos-legacy-latency-us = <2 200>, <2 200>;
+		qcom,pm-qos-legacy-latency-us = <100 200>, <100 200>;
 
 		qcom,msm-bus,name = "sdhc2";
 		qcom,msm-bus,num-cases = <8>;
