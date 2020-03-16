@@ -1197,14 +1197,14 @@ static int __init alucard_hotplug_init(void)
                 {400, 0}
 	};
 	unsigned int hotplug_rate[NR_CPUS][2] = {
-		{1, 1},
+		{0, 1},
                 {4, 2},
                 {3, 3},
-                {2, 4},
+                {2, 0},
                 {1, 1},
                 {4, 1},
                 {4, 1},
-                {4, 1}
+                {4, 0}
 	};
 
 	unsigned int hotplug_cputype[NR_CPUS] = {BIG, BIG, BIG, BIG, LITTLE, LITTLE, LITTLE, LITTLE};
