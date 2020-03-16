@@ -25,4 +25,10 @@ config ALUCARD_CONTROL
 	help
 	  Known for being battery friendly. Developed by Alucard_24@XDA
 
+config ALUCARD_HOTPLUG
+        bool "Enable alucard-hotplug cpu hotplug driver"
+        default n
+        help
+          Generic Alucard-hotplug cpu hotplug driver for ARM SOCs 
+
 endmenu
